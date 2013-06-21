@@ -12,6 +12,7 @@ module PayPal
       autoload :ErrorHash,        "paypal-sdk/rest/error_hash"
 
       include DataTypes
+      include Core::OpenIDConnect::DataTypes
       include Core::Exceptions
 
       module ClassMethods
